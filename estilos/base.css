@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+}
+
+#titulo-curso {
+    display: block;
+    padding: 12px;
+    font-size: 1.4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+}
+
+nav a {
+    flex: 1 1 auto;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #204f70;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 5px 0 20px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+}
+
+.card {
+    border: 1px solid #bbb;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 8px;
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+}
+
+.apresentacao p {
+    flex: 1;
+    margin: 0;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border: 1px solid #bbb;
+}
+
+.pais {
+    padding: 0 15px 15px;
+}
+
+.pais h3 {
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.pais figure {
+    float: left;
+    width: 35%;
+    margin: 10px 15px 10px 0;
+    text-align: center;
+}
+
+.pais figure img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #bbb;
+}
+
+.pais figcaption {
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.recursos {
+    min-height: 400px;
+}
+
+.recursos ul {
+    padding: 35px 25px 25px 40px;
+}
+
+.recursos li {
+    margin: 8px 0;
+}
+
+.recursos a {
+    color: #0000ee;
+}
+
+footer {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 3px;
+}
+
+#ultimaModificacao {
+    color: #ffff00;
+    font-size: 0.85rem;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .foto-perfil {
+        width: 140px;
+        height: 180px;
+    }
+
+    .pais figure {
+        width: 40%;
+    }
+}
