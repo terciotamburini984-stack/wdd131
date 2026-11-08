@@ -1,0 +1,41 @@
+
+@media screen and (min-width: 38rem) {
+
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    header h2 {
+        text-align: left;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: auto;
+    }
+
+    nav a {
+        padding: 0.8rem 1rem;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    figure img {
+        height: 220px;
+    }
+}
