@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça o Brasil: informações geográficas, culturais e climáticas em uma página responsiva.">
+    <meta name="author" content="Tércio Tamburini de Lima Melo">
+
+    <title>Brasil | WDD 131 - Página do País</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Brasil</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source
+                    srcset="imagens/brasil-pequeno.webp"
+                    media="(max-width: 700px)">
+                <img
+                    src="imagens/brasil-grande.webp"
+                    alt="Paisagem do Rio de Janeiro, Brasil, com o Cristo Redentor e montanhas"
+                    width="1600"
+                    height="900">
+            </picture>
+
+            <section class="data">
+                <h2>Dados</h2>
+
+                <dl>
+                    <dt>Área:</dt>
+                    <dd>8.510.418 km²</dd>
+
+                    <dt>População:</dt>
+                    <dd>203.080.756 (Censo 2022)</dd>
+
+                    <dt>Capital:</dt>
+                    <dd>Brasília</dd>
+
+                    <dt>Idioma:</dt>
+                    <dd>Português</dd>
+
+                    <dt>Moeda:</dt>
+                    <dd>Real brasileiro (BRL)</dd>
+
+                    <dt>Fuso horário:</dt>
+                    <dd>UTC−3 (Brasília)</dd>
+
+                    <dt>Domínio:</dt>
+                    <dd>.br</dd>
+                </dl>
+            </section>
+
+            <section class="weather">
+                <h2>Clima</h2>
+
+                <img
+                    class="weather-icon"
+                    src="imagens/clima.svg"
+                    alt="Ícone de sol parcialmente encoberto por nuvem"
+                    width="80"
+                    height="80">
+
+                <p class="weather-note">Exemplo ilustrativo</p>
+
+                <dl>
+                    <dt>Temperatura:</dt>
+                    <dd>8 °C</dd>
+
+                    <dt>Condições:</dt>
+                    <dd>Parcialmente nublado</dd>
+
+                    <dt>Vento:</dt>
+                    <dd>12 km/h</dd>
+
+                    <dt>Sensação térmica:</dt>
+                    <dd><span id="windchill">Calculando...</span></dd>
+                </dl>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Tércio Tamburini de Lima Melo |
+            Sorocaba-SP, BRASIL
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
