@@ -49,14 +49,18 @@ header {
 }
 
 #navigation {
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 1rem;
 }
 
-#navigation.open {
-    display: flex;
+@media screen and (max-width: 699px) {
+    #navigation:not(.open) {
+        visibility: hidden;
+        position: absolute;
+        pointer-events: none;
+    }
 }
 
 #navigation a {
