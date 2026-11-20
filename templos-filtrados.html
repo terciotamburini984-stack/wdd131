@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Álbum de templos com informações, fotografias e filtros por antiguidade e tamanho.">
+    <meta name="author" content="Tércio Tamburini de Lima Melo">
+    <title>Álbum de Templos Filtrados | WDD 131</title>
+
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <link rel="stylesheet" href="estilos/templos-filtrados-grandes.css">
+
+    <script src="scripts/dados-templos.js" defer></script>
+    <script src="scripts/templos-filtrados.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <span class="site-title">Álbum de Templos</span>
+
+            <button id="menu" type="button"
+                    aria-label="Abrir menu de navegação"
+                    aria-expanded="false"
+                    aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation" aria-label="Navegação principal">
+                <a href="#" data-filter="all" class="active" aria-current="page">Página Inicial</a>
+                <a href="#" data-filter="old">Antigos</a>
+                <a href="#" data-filter="new">Novos</a>
+                <a href="#" data-filter="large">Grandes</a>
+                <a href="#" data-filter="small">Pequenos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 id="page-title">Página Inicial</h1>
+        <div id="temple-cards" class="temple-grid"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Tércio Tamburini de Lima Melo | Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
