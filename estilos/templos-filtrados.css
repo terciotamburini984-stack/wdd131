@@ -53,14 +53,12 @@ header {
     flex-direction: column;
     width: 100%;
     margin-top: 1rem;
+    max-height: 0;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 699px) {
-    #navigation:not(.open) {
-        visibility: hidden;
-        position: absolute;
-        pointer-events: none;
-    }
+#navigation.open {
+    max-height: 350px;
 }
 
 #navigation a {

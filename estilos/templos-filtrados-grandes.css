@@ -1,5 +1,4 @@
 
-
 @media screen and (min-width: 700px) {
     .header-content {
         flex-wrap: nowrap;
@@ -15,6 +14,8 @@
         justify-content: flex-end;
         width: auto;
         margin-top: 0;
+        max-height: none;
+        overflow: visible;
         gap: 0.25rem;
     }
 
